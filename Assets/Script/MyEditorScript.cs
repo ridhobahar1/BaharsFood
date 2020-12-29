@@ -14,12 +14,12 @@ public class MyEditorScript : MonoBehaviour
          BuildTarget.Android);
      }*/
 
-    [MenuItem("Assets/Build/AndroidBuild")]
+    [MenuItem("Assets/Build")]
     public static void PerformBuild()
     {
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = new[] { "Assets/Scenes/SampleScene.unity"};
-        buildPlayerOptions.locationPathName = "AndroidBuild";
+        buildPlayerOptions.locationPathName = "Build";
         buildPlayerOptions.target = BuildTarget.Android;
         buildPlayerOptions.options = BuildOptions.None;
 
