@@ -14,7 +14,6 @@ public class MyEditorScript : MonoBehaviour
          BuildTarget.Android);
      }*/
 
-    [MenuItem("Assets/Build")]
     public static void PerformBuild()
     {
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
